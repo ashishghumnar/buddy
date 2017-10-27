@@ -1,14 +1,21 @@
 {
-  "name": "buddydoctor",
+  "name": "alexa-app-bmc",
   "version": "1.0.0",
-  "description": "machine learning poc",
-  "main": "index.js",
+  "description": "demo of alexa",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "author": "ashish",
-  "license": "MIT",
+  "license": "ISC",
   "dependencies": {
+    "alexa-app": "^4.2.0",
+    "body-parser": "^1.18.2",
+    "express": "^4.15.4",
+    "loadash": "^1.0.0",
+    "request": "^2.83.0",
+    "socket.io": "^2.0.3",
     "brain": "^0.7.0",
     "classifier": "^0.1.0",
     "natural-brain": "^0.2.3"

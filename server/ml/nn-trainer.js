@@ -5,8 +5,10 @@ var brain = require('brain'),
 const SPLIT = 3,
     trainData = DATA.slice(0, SPLIT),
     testData = DATA.slice(SPLIT + 1);
-
+	
 const net = new brain.NeuralNetwork();
+	
+function startTraining () {
 var fever = [{
         input: [0, 1, 1, 0, 0, 0, 0, 0],
         output: [0, 1, 0, 0, 0]
@@ -133,8 +135,17 @@ var fever = [{
             output: [0, 0, 0, 0, 1]
         }];
 
-net.train([].concat(fever, malria, cough, cold, typhoid));
+		net.train([].concat(fever, malria, cough, cold, typhoid));
+}
 
-const sample = net.run([1, 1, 1, 1, 1, 1, 1, 1]);
+function getDisease (input) {
+	const sample = net.run(input);	
+	console.log(input);
+	console.log(sample);
+	return sample;
+}
 
-console.log('sample::', sample);
+module.exports = {
+	startTraining: startTraining,
+	getDisease: getDisease
+};
