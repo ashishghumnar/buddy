@@ -18,6 +18,7 @@
     "socket.io": "^2.0.3",
     "brain": "^0.7.0",
     "classifier": "^0.1.0",
-    "natural-brain": "^0.2.3"
+    "natural-brain": "^0.2.3",
+    "lodash": "^4.17.4"
   }
 }
