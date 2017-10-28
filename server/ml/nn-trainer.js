@@ -20,7 +20,7 @@ var brain = require('brain'),
 
 const net = new brain.NeuralNetwork({
     activation: 'sigmoid', // activation function
-    hiddenLayers: [2],
+    hiddenLayers: [8],
     iterations: 20000,
     learningRate: 0.5 // global learning rate, useful when training using streams
 });
