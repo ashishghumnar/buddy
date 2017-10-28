@@ -84,7 +84,11 @@ function getDisease(input) {
         });
     }
 
-    return {'medication': medication, 'foundDisease': foundDisease};
+    return {
+        'medication': medication,
+        'foundDisease': foundDisease,
+        'predicatedDiseasePercentage': predicatedDiseasePercentage * 100
+    };
 }
 
 function retrainModel(newDisease) {
