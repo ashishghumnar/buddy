@@ -51,8 +51,8 @@ function getDisease(input) {
 
     if ((predicatedDiseasePercentage * 100) < 60) {
         if (_.indexOf(newDeseases, foundDisease) < 0) {
-            diseases.push('NewDisease');
-            newDeseases.push('NewDisease');
+            diseases.push('InfluenZa');
+            newDeseases.push('InfluenZa');
 
             var diseaseLength = diseases.length - 1;
 

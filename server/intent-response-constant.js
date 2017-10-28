@@ -9,7 +9,13 @@ module.exports = {
             "card": {
                 "type": "Simple"
             },
-            "shouldEndSession": true
+            "shouldEndSession": false,
+            "reprompt": {
+                "outputSpeech": {
+                    "type": "PlainText",
+                    "text": "Can I help you with anything else?"
+                }
+            }
         }
     },
 
