@@ -1,126 +1,124 @@
 <!DOCTYPE html>
-<html>
-	<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Buddy Doctor</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+<html ng-app="buddyDoctor">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Buddy Doctor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-	<link href="./css/wickedpicker.css" rel="stylesheet" type="text/css" media="all">
-	<link href="./css/style.css" rel="stylesheet" type="text/css">
-	<!--fonts--> 
-	<link href="./css/css" rel="stylesheet">
-	<link href="./css/css(1)" rel="stylesheet">
-		<!--//fonts--> 
-	</head>
+    <link href="./css/wickedpicker.css" rel="stylesheet" type="text/css" media="all">
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <!--fonts-->
+    <link href="./css/css" rel="stylesheet">
+    <link href="./css/css(1)" rel="stylesheet">
+    <!--//fonts-->
+    <script type="text/javascript" src="./css/jquery-2.1.4.min.js.download"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.6/angular.js"></script>
+</head>
 <body cz-shortcut-listen="true">
 <div class="welcome">Welcome Global Logic.</div>
 <h1>Medical Suggestions</h1>
 -
-<div class="">
-<div class="book-appointment dieses-suggestion">
-<h2>Patient Medical Suggestions</h2>
-<div>
-	<h1 class="right-agileinfo dieses-suggestion-header">WELCOME TO BUDDY DOCTOR</h1>
-	<div class="right-agileinfo dieses-suggestion-text">
-	Hi XYZ, Based on you input, we found that you are suffering from <span class="diesesName">"FEVER"</span>.
-	Please go through below recommandations.
-	
-	</div>
-	<div class="clear"></div>
-</div>
-</div>
+<div ng-controller="medicationController">
+    <div class="book-appointment dieses-suggestion">
+        <h2>Patient Medical Suggestions</h2>
+        <div>
+            <h1 class="right-agileinfo dieses-suggestion-header">WELCOME TO BUDDY DOCTOR</h1>
+            <div class="right-agileinfo dieses-suggestion-text">
+                Hi Bob, Based on you input, we found that you are suffering from <span class="diesesName">{{foundDisease}}</span>.
+                Please go through below recommendation's.
+                <br>ICD DATA : {{ icdData}}
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
 
-<div class="medical-suggestion">
-<div>
-	<div class="right-agileinfo medical-suggestion-box allopathic">
-		<h4 class="suggestion_title allopathic_title">
-			<a><span class="icon-allopathic">
+    <div class="medical-suggestion">
+        <div>
+            <div class="right-agileinfo medical-suggestion-box allopathic">
+                <h4 class="suggestion_title allopathic_title">
+                    <a><span class="icon-allopathic">
 			</span>Allopathic Medicines</a>
-		</h4>
-		<div class="suggestion_content">
-		<div class="medicineRowParent">
-			<div class="medicineRow">
-				<div class="left">Medicine</div>
-				<div class="right">Dose</div>
-				<div class="clear"></div>
-			</div>
-			<div class="medicineRow">
-				<div class="left">Medicine1</div>
-				<div class="right">1 per Day</div>
-				<div class="clear"></div>
-			</div>
-			<div class="medicineRow">
-				<div class="left">Medicine2</div>
-				<div class="right">2 per Day</div>
-				<div class="clear"></div>
-			</div>
-		</div>
-			<div class="medicineRow">
-				<div class="left"><input type="submit" value="Ask to Doctor">	</div>
-				<div class="right"><input type="submit" value="Ok">	</div>
-				<div class="clear"></div>
-			</div>
-		</div>
-	</div>
-	<div class="right-agileinfo medical-suggestion-box home-remedies">
-	<h4 class="suggestion_title remedies_title">
-		<a href="http://healthandcare.ancorathemes.com/services/opening-hours/"><span class="sc_icon icon-hospital">
+                </h4>
+                <div class="suggestion_content">
+                    <div class="medicineRowParent allomedicineRowParent">
+                        <div class="medicineRow" ng-repeat="tab in medication.allopathicMedicine">
+                            <div class="left">Tab. {{tab}}</div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="medicineRow">
+                        <div class="left"><input type="submit" value="Confirm with Physician"></div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-agileinfo medical-suggestion-box allopathic">
+                <h4 class="suggestion_title ayurved_title">
+                    <a><span class="icon-allopathic">
+			</span>Ayurvedic Medicines</a>
+                </h4>
+                <div class="suggestion_content">
+                    <div class="medicineRowParent">
+                        <div class="medicineRow" ng-repeat="tab in medication.ayurvedicMedicine">
+                            <div class="left">{{tab}}</div>
+
+                            <div class="clear"></div>
+                        </div>
+
+                    </div>
+                    <div class="medicineRow">
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-agileinfo medical-suggestion-box home-remedies">
+                <h4 class="suggestion_title remedies_title">
+                    <a href="http://healthandcare.ancorathemes.com/services/opening-hours/"><span
+                            class="sc_icon icon-hospital">
 		</span>Home Remedies</a>
-	</h4>
-	<div class="suggestion_content">
-	<div class="medicineRowParent">
-		<div class="medicineRow">
-			<div class="left">Remedy</div>
-			<div class="right">Doses</div>
-			<div class="clear"></div>
-		</div>
-		<div class="medicineRow">
-			<div class="left">Tulasi Tea</div>
-			<div class="right">2 cup per Day</div>
-			<div class="clear"></div>
-		</div>
-	</div>
-		<div class="medicineRow">
-			<div class="right"><input type="submit" value="Ok">	</div>
-			<div class="clear"></div>
-		</div>
-	</div>
-	</div>
-	
-	<div class="right-agileinfo medical-suggestion-box precations">
-	<h4 class="suggestion_title precations_title">
-		<a href="http://healthandcare.ancorathemes.com/services/opening-hours/"><span class="sc_icon icon-hospital">
+                </h4>
+                <div class="suggestion_content">
+                    <div class="medicineRowParent">
+                        <div class="medicineRow" ng-repeat="tab in medication.homeRemedies">
+                            <div class="left">{{tab}}</div>
+
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+
+                    <div class="medicineRow">
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-agileinfo medical-suggestion-box precations">
+                <h4 class="suggestion_title precations_title">
+                    <a href="http://healthandcare.ancorathemes.com/services/opening-hours/"><span
+                            class="sc_icon icon-hospital">
 		</span>Take Precations</a>
-	</h4>
-	
-	<div class="suggestion_content">
-	<div class="medicineRowParent">
-		<div class="medicineRow">
-			<div class="left">Dont Drink Chilled Water</div>
-			<div class="clear"></div>
-		</div>
-		<div class="medicineRow">
-			<div class="left">Dont Eat Bananas</div>
-			<div class="clear"></div>
-		</div>
-	</div>
-		<div class="medicineRow">
-			<div class="right"><input type="submit" value="Ok">	</div>
-			<div class="clear"></div>
-		</div>
-	</div>
-	</div>
-	</div>
-	<div class="clear"></div>
-</div>
-</div>
-</div>
+                </h4>
 
-<script type="text/javascript" src="./css/jquery-2.1.4.min.js.download"/>
-<script type="text/javascript" src="./css/wickedpicker.js.download"/>
+                <div class="suggestion_content">
+                    <div class="medicineRowParent">
+                        <div class="medicineRow" ng-repeat="tab in medication.precautions">
+                            <div class="left">{{tab}}</div>
 
-<link rel="stylesheet" href="./css/jquery-ui.css">
-	<script src="./css/jquery-ui.js.download"/>
+                            <div class="clear"></div>
+                        </div>
+
+                    </div>
+                    <div class="medicineRow">
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <link rel="stylesheet" href="./css/jquery-ui.css">
+        <script src="./css/jquery-ui.js.download"></script>
+        <script src="./client-app.js"></script>
 </body>
 </html>

@@ -92,7 +92,13 @@ var data = {
       'Eucalyptus Oil',
       'Kankasava'
     ],
-    'homeRemedies': [],
+    'homeRemedies': [
+        'Eat FeverNut Fruit',
+        'Use cinnamon in food preparation',
+        'Eat Powdered alum',
+        'Eat Datura vegetable',
+        'Drink ginger tea'
+    ],
     'precautions': [
       'Wear protective clothing (long pants and long-sleeved shirts).',
       'Use mosquito repellents.',

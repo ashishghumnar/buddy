@@ -10,9 +10,10 @@ function buddyDoctorRequestHandler(app, server) {
     app.post('/api.symtoms', function (req, res) {
         var requestBody = req.body;
 
-        nnTrainer.getDisease([requestBody.cold, requestBody.temperature, requestBody.bodyPain,
+        var medications = nnTrainer.getDisease([requestBody.cold, requestBody.temperature, requestBody.bodyPain,
             requestBody.throatPain, requestBody.headache, requestBody.vomiting, requestBody.diarrhea, requestBody.sweating]);
-        res.send('Hi');
+
+        res.send(medications);
     });
 
     app.post('/api.symtoms.alexa', intentRequestHandler);

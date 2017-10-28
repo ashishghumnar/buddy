@@ -84,7 +84,7 @@ function getDisease(input) {
         });
     }
 
-    return foundDisease;
+    return {'medication': medication, 'foundDisease': foundDisease};
 }
 
 function retrainModel(newDisease) {

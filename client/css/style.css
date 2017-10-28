@@ -33,192 +33,192 @@ body{
 	font-family: 'Roboto', sans-serif;
 	font-size: 100%;
 	background: url(../images/b1.jpg)no-repeat center top;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-	    min-height: 747px;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	min-height: 747px;
 	background-attachment:fixed;
 }
 .bg-agile {
-    width: 65%;
-    margin: 0 auto;
+	width: 65%;
+	margin: 0 auto;
 }
 
 h1 {
-    font-size: 43px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #fff;
-    word-spacing: 11px;
-    /* letter-spacing: 6px; */
-    margin: 1.1em 0;
-    text-align: center;
-    font-family: 'Droid Sans', sans-serif;
+	font-size: 43px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #fff;
+	word-spacing: 11px;
+	/* letter-spacing: 6px; */
+	margin: 1.1em 0;
+	text-align: center;
+	font-family: 'Droid Sans', sans-serif;
 }
 /*--appointment--*/
 .book-appointment h2 {
-    text-align: center;
-    font-size: 25px;
-    color: #fff;
-    text-transform: uppercase;
-    margin-bottom: 1.5em;
-    font-weight: 500;
-    /* letter-spacing: 4px; */
-    font-family: 'Droid Sans', sans-serif;
+	text-align: center;
+	font-size: 25px;
+	color: #fff;
+	text-transform: uppercase;
+	margin-bottom: 1.5em;
+	font-weight: 500;
+	/* letter-spacing: 4px; */
+	font-family: 'Droid Sans', sans-serif;
 }
 .book-appointment {
-    background:rgba(1, 38, 64, 0.68);
-    padding: 50px 30px;
+	background:rgba(1, 38, 64, 0.68);
+	padding: 50px 30px;
 }
 .book-appointment input[type="password"],.book-appointment input[type="text"], .book-appointment input[type="date"], .book-appointment input[type="time"], .book-appointment input[type="email"],textarea {
-    width: 85%;
-    color: #fff;
-    outline: none;
-    font-size: 0.9em;
-    line-height: 25px;
-    padding: 5px 10px;
-    border: none;
-    border-bottom: 2px solid #0b6fb2;
-    -webkit-appearance: none;
-    margin: .3em 0em 1em;
-    font-family: 'Roboto', sans-serif;
-    background: rgba(127, 178, 212, 0.31);
+	width: 85%;
+	color: #fff;
+	outline: none;
+	font-size: 0.9em;
+	line-height: 25px;
+	padding: 5px 10px;
+	border: none;
+	border-bottom: 2px solid #0b6fb2;
+	-webkit-appearance: none;
+	margin: .3em 0em 1em;
+	font-family: 'Roboto', sans-serif;
+	background: rgba(127, 178, 212, 0.31);
 }
 textarea {
 	resize:none;
 	height:25px
 }
 .book-appointment select.form-control {
-    outline: none;
-    font-size: 0.9em;
-    padding: 7px 10px;
-    width: 89.5%;
+	outline: none;
+	font-size: 0.9em;
+	padding: 7px 10px;
+	width: 89.5%;
 	margin: 5px 0px 16px;
-    border-radius: 0;
-   background: rgba(127, 178, 212, 0.31);
-    color: #fff;
-    border: none;
-    border-bottom: 2px solid #0b6fb2;
-    font-family: 'Roboto', sans-serif;
+	border-radius: 0;
+	background: rgba(127, 178, 212, 0.31);
+	color: #fff;
+	border: none;
+	border-bottom: 2px solid #0b6fb2;
+	font-family: 'Roboto', sans-serif;
 }
 .book-appointment select.form-control option {
-    background:#111;
+	background:#111;
 }
-input[type=submit] {
-    display: block;
-    color: #fff;
-    margin: 0 auto;
-    margin-top: 2em;
-    padding: 9px 30px;
-    font-size: 1.04em;
-    cursor: pointer;
-    border: 2px solid #ff9900;
-    outline: none;
-    background: #ff9900;
-    font-weight: 500;
-    font-family: 'Roboto', sans-serif;
-    transition: 0.5s all ease;
-    -webkit-transition: 0.5s all ease;
-    -moz-transition: 0.5s all ease;
-    -o-transition: 0.5s all ease;
-    -ms-transition: 0.5s all ease;
+input[type=submit] ,input[type=button] {
+	display: block;
+	color: #fff;
+	margin: 0 auto;
+	margin-top: 2em;
+	padding: 9px 30px;
+	font-size: 1.04em;
+	cursor: pointer;
+	border: 2px solid #ff9900;
+	outline: none;
+	background: #ff9900;
+	font-weight: 500;
+	font-family: 'Roboto', sans-serif;
+	transition: 0.5s all ease;
+	-webkit-transition: 0.5s all ease;
+	-moz-transition: 0.5s all ease;
+	-o-transition: 0.5s all ease;
+	-ms-transition: 0.5s all ease;
 }
 input[type=submit]:hover {
-    background: #023e99;
-    border-color: #023e99;
-    color: #fefefe;
-    transition: 0.5s all ease;
-    -webkit-transition: 0.5s all ease;
-    -moz-transition: 0.5s all ease;
-    -o-transition: 0.5s all ease;
-    -ms-transition: 0.5s all ease;
+	background: #023e99;
+	border-color: #023e99;
+	color: #fefefe;
+	transition: 0.5s all ease;
+	-webkit-transition: 0.5s all ease;
+	-moz-transition: 0.5s all ease;
+	-o-transition: 0.5s all ease;
+	-ms-transition: 0.5s all ease;
 }
 .arrows-reserve{
-	    position:relative;
-		color:#EFA52C;
-		font-size:2em;
+	position:relative;
+	color:#EFA52C;
+	font-size:2em;
 }
 .arrows-reserve:before{
-    content: '';
-    position: absolute;
-    bottom: 43%;
-    left: 35.5%;
-    background: #fff;
-    width: 11%;
-    height: 3px;
+	content: '';
+	position: absolute;
+	bottom: 43%;
+	left: 35.5%;
+	background: #fff;
+	width: 11%;
+	height: 3px;
 }
 .arrows-reserve:after{
-     content: '';
-    position: absolute;
-  bottom: 43%;
-    right: 35.5%;
-    background: #fff;
-        width: 11%;
-    height: 3px;
+	content: '';
+	position: absolute;
+	bottom: 43%;
+	right: 35.5%;
+	background: #fff;
+	width: 11%;
+	height: 3px;
 }
 .left-agileits-w3layouts {
-    width: 49%;
-    float: left;
+	width: 49%;
+	float: left;
 }
 .right-agileinfo {
-    width: 49%;
-    float: left;
+	width: 49%;
+	float: left;
 }
 .login-form .left-agileits-w3layouts {
-    width: 24%;
+	width: 24%;
 }
 
 .login-form .right-agileinfo {
-    width: 24%;
+	width: 24%;
 }
 .book-appointment p {
-    color: #d6eefe;
-    font-size: 17px;
-    letter-spacing: .5px;
+	color: #d6eefe;
+	font-size: 17px;
+	letter-spacing: .5px;
 	text-transform:capitalize;
 }
 .same {
-    padding: 0px 4px;
+	padding: 0px 4px;
 }
 .gaps {
-    padding-left: 3em;
+	padding-left: 3em;
 }
 p.wickedpicker__title {
-    font-family: 'Roboto', sans-serif;
-    background: #0b6fb2;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: .5px;
+	font-family: 'Roboto', sans-serif;
+	background: #0b6fb2;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: .5px;
 }
 .wickedpicker__close {
-    color: #fefefe;
+	color: #fefefe;
 }
 /*--//appointment--*/
 
 /*--copyright--*/
 .copy.w3ls {
-    margin: 2.2em 0em 0;
-    text-align: center;
+	margin: 2.2em 0em 0;
+	text-align: center;
 }
 .copy p {
-    color: #fff;
-    font-size: 16px;
-    letter-spacing: 1px;
-    word-spacing: 2px;
+	color: #fff;
+	font-size: 16px;
+	letter-spacing: 1px;
+	word-spacing: 2px;
 }
 .copy p a {
-    color: #0b6fb2;
-    text-decoration: none;
+	color: #0b6fb2;
+	text-decoration: none;
 }
 .copy p a:hover {
-    color: #fff;
+	color: #fff;
 }
 .login-form{margin-bottom:50px;}
 .welcome{color: #fff;text-align: right;margin-right: 50px; margin-top:10px;}
 .dieses-suggestion{color:#fff;}
 .right-agileinfo.dieses-suggestion-header{width:40%;margin-top: 20px;}
-.right-agileinfo.dieses-suggestion-text{width:60%;margin-top: 20px;}
+.right-agileinfo.dieses-suggestion-text{width:60%;margin-top: 20px;font-size: 20px;}
 
 .medical-suggestion{width:100%; margin:0 auto; padding: 50px 0;    background: #fff;}
 .medical-suggestion-box.allopathic { background:#A5D8D1; }
@@ -227,21 +227,23 @@ p.wickedpicker__title {
 .allopathic_title{background: #8FCEC5 url(../images/allo.png)no-repeat 20px center; background-size: 100px;}
 .remedies_title{ background:#8FCEC5 url(../images/home.png)no-repeat 20px center; background-size: 100px;}
 .precations_title{ background:#8FCEC5 url(../images/prec.png)no-repeat 20px center; background-size: 100px;}
+.ayurved_title{ background:#8FCEC5 url(../images/ayurved.png)no-repeat 20px center; background-size: 100px;}
 .suggestion_content{padding:20px;}
-.medicineRowParent{min-height:150px;}
+.medicineRowParent{min-height:315px;}
+.medicineRowParent.allomedicineRowParent{min-height:250px;}
 .medical-suggestion-box {
-  width:32%; color:#fff;margin-left:1%;transition: transform 1s;
+	width:24%; color:#fff;margin-left:1%;transition: transform 1s;
 }
 .medical-suggestion-box:hover {
-        transform: scale(1.1);
+	transform: scale(1.1);
 }
 .suggestion_title{margin-top: 0;
-    padding: 0 4rem 0 8.46153rem;
-    font-size: 1.538rem;
-    text-align: left;
-    display: table-cell;
-    vertical-align: middle;
-    height: 8.76923rem;    font-family: fantasy;min-width: 230px;}
+	padding: 0 4rem 0 8.46153rem;
+	font-size: 1.538rem;
+	text-align: left;
+	display: table-cell;
+	vertical-align: middle;
+	height: 8.76923rem;    font-family: fantasy;min-width: 24%;}
 .suggestion_title a{color:#fff;}
 .medicineRow{padding:5px 0;}
 .diesesName{font-size: 19px;font-weight: bold;font-family: monospace;font-style: oblique;}
@@ -250,10 +252,10 @@ p.wickedpicker__title {
 /*--//copyright--*/
 /*--responsive--*/
 @media(max-width:1680px){
-	
+
 }
 @media(max-width:1440px){
-	
+
 }
 @media(max-width:1366px){
 	.gaps {
@@ -412,7 +414,7 @@ p.wickedpicker__title {
 	.book-appointment select.form-control {
 		width: 98%;
 	}
-	
+
 }
 @media(max-width:667px){
 	.gaps {
@@ -476,7 +478,7 @@ p.wickedpicker__title {
 		margin: 1.2em 1.5em 0;
 	}
 	h1 {
-   `	 margin: 1.7em 0 1.1em;
+		`	 margin: 1.7em 0 1.1em;
 	}
 }
 @media(max-width:480px){
